@@ -1,5 +1,5 @@
 <div style="background: linear-gradient(90deg, #28a745, #218838); color: white; padding: 15px 25px; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.1); font-size: 1.1rem;">
-  <i class="fas fa-database"></i> IT 01-1: User Management System
+  <i class="fas fa-database"></i> User Management System
 </div>
 
 <div style="padding: 30px; background-color: #f8f9fa; min-height: calc(100vh - 56px);">
@@ -7,7 +7,7 @@
   <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
     <button (click)="openModal('add')" 
             style="background-color: #007bff; color: white; border: none; padding: 10px 25px; border-radius: 6px; cursor: pointer; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,123,255,0.2);">
-      + เพิ่มข้อมูล (ADD)
+      + ADD
     </button>
   </div>
 
@@ -57,7 +57,7 @@
   <div style="background: white; width: 100%; max-width: 550px; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); animation: modalFadeIn 0.3s ease-out;">
     
     <div [style.background-color]="mode === 'add' ? '#007bff' : '#28a745'" style="color: white; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center;">
-      <span style="font-weight: 600; font-size: 1.2rem;">{{ mode === 'add' ? 'IT 01-2: เพิ่มสมาชิกใหม่' : 'IT 01-3: รายละเอียดสมาชิก' }}</span>
+      <span style="font-weight: 600; font-size: 1.2rem;">{{ mode === 'add' ? 'เพิ่มสมาชิกใหม่' : 'รายละเอียดสมาชิก' }}</span>
       <span (click)="closeModal()" style="cursor: pointer; font-size: 1.5rem; line-height: 1;">&times;</span>
     </div>
     
