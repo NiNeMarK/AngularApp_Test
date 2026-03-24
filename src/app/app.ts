@@ -15,7 +15,8 @@ export class AppComponent implements OnInit {
   mode: 'add' | 'view' = 'add';
   userForm: FormGroup;
   
-  private apiUrl = 'https://localhost:7066/api/users'; 
+  // private apiUrl = 'https://localhost:7066/api/users'; 
+  private apiUrl = 'http://localhost:5239/api/users'; 
 
   constructor(private fb: FormBuilder, private http: HttpClient, private cdr: ChangeDetectorRef) {
     this.userForm = this.fb.group({
